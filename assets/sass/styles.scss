@@ -189,7 +189,10 @@ section.portfolio{
             width: 100%;
             display: flex;
             justify-content: space-between;
-            img{
+            a{
+                img{
+                    width: 100%;
+                }
                 width: 32%;
                 @include mq(768px){
                     width: 100%;
@@ -206,6 +209,9 @@ section.portfolio{
             justify-content: space-between;
             .first{
                 width: 32%;
+                img{
+                    width: 100%;
+                }
                 @include mq(768px){
                     width: 100%;
                     margin-bottom: 30px;
@@ -213,6 +219,9 @@ section.portfolio{
             }
             .second{
                 width: 64%;
+                img{
+                    width: 100%;
+                }
                 @include mq(768px){
                     width: 100%;
                     margin-bottom: 30px;
@@ -227,6 +236,9 @@ section.portfolio{
             display: flex;
             justify-content: space-between;
             .first{
+                img{
+                    width: 100%;
+                }
                 width: 32%;
                 @include mq(768px){
                     width: 100%;
@@ -235,6 +247,9 @@ section.portfolio{
             }
             .second{
                 width: 64%;
+                img{
+                    width: 100%;
+                }
                 @include mq(768px){
                     width: 100%;
                     margin-bottom: 30px;
@@ -265,6 +280,79 @@ section.videos{
         @include mq(700px){
             width: 100%;
             margin-bottom: 30px;  
+        }
+    }
+}
+
+
+section.tributes{
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+   
+    margin-bottom: 100px;
+    @include mq(500px){
+        width: 90%;  
+    }
+    p.title{
+        font-weight: 600;
+        font-size: 40px;
+        font-family: $zilla;
+        font-style: italic;
+        color: black;
+        margin-bottom: 30px;
+        @include mq(500px){
+           font-size: 30px; 
+        }
+    }
+    .flexDiv{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .eachTribute{
+            width: 30%;
+            height: 270px;
+            border: 1px solid #EEEEEE;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            @include mq(1045px){
+                height: auto;
+                width: 100%;
+            }
+            .message{
+                width: 100%;
+                height: 85%;
+                padding: 15px 10px;
+                border-bottom: 1px solid #EEEEEE;
+                @include mq(1045px){
+                    height: auto;
+         
+                }
+                p{
+                    line-height: 25.6px;
+                    font-family: $dmsans;
+                    font-size: 14px;
+                    @include mq(500px){
+                        font-size: 12px;
+                    }
+                }
+            }
+            .name{
+               padding: 10px 10px;
+               height: 15%;
+               @include mq(1045px){
+                height: auto;
+           
+            }
+               p{
+                font-family: $dmsans;
+                font-size: 12px;
+                @include mq(500px){
+                    font-size: 10px;
+                }
+               }
+            }
         }
     }
 }

@@ -199,11 +199,14 @@ section.portfolio .flexDiv .flex.one {
   display: flex;
   justify-content: space-between;
 }
-section.portfolio .flexDiv .flex.one img {
+section.portfolio .flexDiv .flex.one a {
   width: 32%;
 }
+section.portfolio .flexDiv .flex.one a img {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
-  section.portfolio .flexDiv .flex.one img {
+  section.portfolio .flexDiv .flex.one a {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -221,6 +224,9 @@ section.portfolio .flexDiv .flex.two {
 section.portfolio .flexDiv .flex.two .first {
   width: 32%;
 }
+section.portfolio .flexDiv .flex.two .first img {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   section.portfolio .flexDiv .flex.two .first {
     width: 100%;
@@ -229,6 +235,9 @@ section.portfolio .flexDiv .flex.two .first {
 }
 section.portfolio .flexDiv .flex.two .second {
   width: 64%;
+}
+section.portfolio .flexDiv .flex.two .second img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   section.portfolio .flexDiv .flex.two .second {
@@ -249,6 +258,9 @@ section.portfolio .flexDiv .flex.three {
 section.portfolio .flexDiv .flex.three .first {
   width: 32%;
 }
+section.portfolio .flexDiv .flex.three .first img {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   section.portfolio .flexDiv .flex.three .first {
     width: 100%;
@@ -257,6 +269,9 @@ section.portfolio .flexDiv .flex.three .first {
 }
 section.portfolio .flexDiv .flex.three .second {
   width: 64%;
+}
+section.portfolio .flexDiv .flex.three .second img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   section.portfolio .flexDiv .flex.three .second {
@@ -292,5 +307,88 @@ section.videos video {
   section.videos video {
     width: 100%;
     margin-bottom: 30px;
+  }
+}
+
+section.tributes {
+  max-width: 1140px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 500px) {
+  section.tributes {
+    width: 90%;
+  }
+}
+section.tributes p.title {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Zilla Slab", serif;
+  font-style: italic;
+  color: black;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  section.tributes p.title {
+    font-size: 30px;
+  }
+}
+section.tributes .flexDiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section.tributes .flexDiv .eachTribute {
+  width: 30%;
+  height: 270px;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1045px) {
+  section.tributes .flexDiv .eachTribute {
+    height: auto;
+    width: 100%;
+  }
+}
+section.tributes .flexDiv .eachTribute .message {
+  width: 100%;
+  height: 85%;
+  padding: 15px 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+@media screen and (max-width: 1045px) {
+  section.tributes .flexDiv .eachTribute .message {
+    height: auto;
+  }
+}
+section.tributes .flexDiv .eachTribute .message p {
+  line-height: 25.6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+@media screen and (max-width: 500px) {
+  section.tributes .flexDiv .eachTribute .message p {
+    font-size: 12px;
+  }
+}
+section.tributes .flexDiv .eachTribute .name {
+  padding: 10px 10px;
+  height: 15%;
+}
+@media screen and (max-width: 1045px) {
+  section.tributes .flexDiv .eachTribute .name {
+    height: auto;
+  }
+}
+section.tributes .flexDiv .eachTribute .name p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+}
+@media screen and (max-width: 500px) {
+  section.tributes .flexDiv .eachTribute .name p {
+    font-size: 10px;
   }
 }
