@@ -1,0 +1,16 @@
+@mixin button {
+    padding: 8px 0px;
+    border: transparent;
+    transition: ease 0.8s;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+
+@mixin mq($arg) {
+    @media screen and (max-width: $arg) {
+      @content;
+    }
+}
+
