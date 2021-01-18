@@ -10,3 +10,261 @@
     // font-family: 'Zilla Slab', serif;
 }
 
+
+section.singleVideo{
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    @include mq(500px){
+        width: 90%;  
+    }
+    video{
+        width: 60%;
+        display: block;
+        margin: auto;
+        @include mq(700px){
+            width: 85%;  
+        }
+    }
+}
+
+
+
+section.ibm{
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+
+    margin-bottom: 100px;
+    @include mq(500px){
+        width: 90%;  
+    }
+    p.title{
+        font-weight: 600;
+        font-size: 40px;
+        font-family: $zilla;
+        font-style: italic;
+        color: black;
+        margin-bottom: 30px;
+        @include mq(500px){
+           font-size: 30px; 
+        }
+    }
+    .cover{
+        width: 100%;
+        margin-bottom: 20px;
+        .flex{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include mq(768px){
+                flex-direction: column;
+            }
+            .paragraph{
+                width: 45%;
+                @include mq(768px){
+                   width: 100%;
+                   margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 160%;
+                    font-family: $dmsans;
+                    
+                    @include mq(500px){
+                        font-size: 12px; 
+                     }
+
+
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+section.ecx{
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+ 
+    margin-bottom: 100px;
+    @include mq(500px){
+        width: 90%;  
+    }
+    p.title{
+        font-weight: 600;
+        font-size: 40px;
+        font-family: $zilla;
+        font-style: italic;
+        color: black;
+        margin-bottom: 30px;
+        @include mq(500px){
+           font-size: 30px; 
+        }
+    }
+    .cover{
+        width: 100%;
+        margin-bottom: 20px;
+        .flex{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include mq(768px){
+                flex-direction: column;
+            }
+            .paragraph{
+                width: 45%;
+                @include mq(768px){
+                   width: 100%;
+                   margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 160%;
+                    font-family: $dmsans;
+                    
+                    @include mq(500px){
+                        font-size: 12px; 
+                     }
+
+
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+section.portfolio{
+    
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+   
+    margin-bottom: 100px;
+    @include mq(500px){
+        width: 90%;  
+    }
+    p.title{
+        font-weight: 600;
+        font-size: 40px;
+        font-family: $zilla;
+        font-style: italic;
+        color: black;
+        margin-bottom: 30px;
+        @include mq(500px){
+           font-size: 30px; 
+        }
+    }
+    .flexDiv{
+        width: 100%;
+        .flex{
+            margin-bottom: 40px;
+            @include mq(768px){
+                margin-bottom: 0px;
+            }
+        }
+        img{
+            transition: 0.3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    
+        
+            
+        
+        .flex.one{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 32%;
+                @include mq(768px){
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            @include mq(768px){
+                flex-direction: column;
+            }
+        }
+        .flex.two{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .first{
+                width: 32%;
+                @include mq(768px){
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            .second{
+                width: 64%;
+                @include mq(768px){
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            @include mq(768px){
+                flex-direction: column;
+            }
+        }
+        .flex.three{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .first{
+                width: 32%;
+                @include mq(768px){
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            .second{
+                width: 64%;
+                @include mq(768px){
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            @include mq(768px){
+                flex-direction: column;
+            }
+        }
+    }
+   
+}
+
+section.videos{
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mq(500px){
+        width: 90%;  
+    }
+    video{
+        width: 48%;
+        @include mq(700px){
+            width: 100%;
+            margin-bottom: 30px;  
+        }
+    }
+}

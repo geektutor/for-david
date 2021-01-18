@@ -3,3 +3,294 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+section.singleVideo {
+  max-width: 1140px;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 500px) {
+  section.singleVideo {
+    width: 90%;
+  }
+}
+section.singleVideo video {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 700px) {
+  section.singleVideo video {
+    width: 85%;
+  }
+}
+
+section.ibm {
+  max-width: 1140px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 500px) {
+  section.ibm {
+    width: 90%;
+  }
+}
+section.ibm p.title {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Zilla Slab", serif;
+  font-style: italic;
+  color: black;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  section.ibm p.title {
+    font-size: 30px;
+  }
+}
+section.ibm .cover {
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.ibm .cover .flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  section.ibm .cover .flex {
+    flex-direction: column;
+  }
+}
+section.ibm .cover .flex .paragraph {
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  section.ibm .cover .flex .paragraph {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+section.ibm .cover .flex .paragraph p {
+  font-size: 14px;
+  line-height: 160%;
+  font-family: "DM Sans", sans-serif;
+}
+@media screen and (max-width: 500px) {
+  section.ibm .cover .flex .paragraph p {
+    font-size: 12px;
+  }
+}
+section.ibm img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+section.ecx {
+  max-width: 1140px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 500px) {
+  section.ecx {
+    width: 90%;
+  }
+}
+section.ecx p.title {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Zilla Slab", serif;
+  font-style: italic;
+  color: black;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  section.ecx p.title {
+    font-size: 30px;
+  }
+}
+section.ecx .cover {
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.ecx .cover .flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  section.ecx .cover .flex {
+    flex-direction: column;
+  }
+}
+section.ecx .cover .flex .paragraph {
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  section.ecx .cover .flex .paragraph {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+section.ecx .cover .flex .paragraph p {
+  font-size: 14px;
+  line-height: 160%;
+  font-family: "DM Sans", sans-serif;
+}
+@media screen and (max-width: 500px) {
+  section.ecx .cover .flex .paragraph p {
+    font-size: 12px;
+  }
+}
+section.ecx img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+section.portfolio {
+  max-width: 1140px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 500px) {
+  section.portfolio {
+    width: 90%;
+  }
+}
+section.portfolio p.title {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Zilla Slab", serif;
+  font-style: italic;
+  color: black;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  section.portfolio p.title {
+    font-size: 30px;
+  }
+}
+section.portfolio .flexDiv {
+  width: 100%;
+}
+section.portfolio .flexDiv .flex {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex {
+    margin-bottom: 0px;
+  }
+}
+section.portfolio .flexDiv img {
+  transition: 0.3s ease;
+}
+section.portfolio .flexDiv img:hover {
+  transform: scale(1.1);
+}
+section.portfolio .flexDiv .flex.one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section.portfolio .flexDiv .flex.one img {
+  width: 32%;
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex.one img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex.one {
+    flex-direction: column;
+  }
+}
+section.portfolio .flexDiv .flex.two {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section.portfolio .flexDiv .flex.two .first {
+  width: 32%;
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex.two .first {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+section.portfolio .flexDiv .flex.two .second {
+  width: 64%;
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex.two .second {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex.two {
+    flex-direction: column;
+  }
+}
+section.portfolio .flexDiv .flex.three {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section.portfolio .flexDiv .flex.three .first {
+  width: 32%;
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex.three .first {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+section.portfolio .flexDiv .flex.three .second {
+  width: 64%;
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex.three .second {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.portfolio .flexDiv .flex.three {
+    flex-direction: column;
+  }
+}
+
+section.videos {
+  max-width: 1140px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  section.videos {
+    width: 90%;
+  }
+}
+section.videos video {
+  width: 48%;
+}
+@media screen and (max-width: 700px) {
+  section.videos video {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
