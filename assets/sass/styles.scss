@@ -10,9 +10,70 @@
     // font-family: 'Zilla Slab', serif;
 }
 
-.biography {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+section.biography {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+
+    @include mq(500px){
+        width: 90%;  
+    }
+
+    .picture {
+        width: 48%;
+        @include mq(700px){
+            width: 100%;
+            margin-bottom: 30px;  
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    .description {
+        width: 45%;
+        margin: auto;
+
+        @include mq(700px){
+            width: 100%;
+            margin-bottom: 30px;  
+        }
+
+        .container{
+            margin-top: 32px;
+            width: 75%;
+            margin: auto;
+            @include mq(700px){
+                width: 100%;
+            }
+             p.title {
+                font-weight: 600;
+                font-size: 48px;
+                font-family: $zilla;
+                font-style: italic;
+                margin-bottom: 12px;
+                line-height: 57.6px;
+            }
+            p.date {
+                font-weight: 500;
+                font-size: 20px;
+                font-family: $inter;
+                font-style: italic;
+                line-height: 160%;
+            }
+            .bio {
+                font-family: $dmsans;
+                p {
+                    margin-top: 32px;
+                    line-height: 25.6px;
+                }
+                
+            }
+        }
+    }
 }
 
 section.singleVideo{
@@ -33,8 +94,6 @@ section.singleVideo{
         }
     }
 }
-
-
 
 section.ibm{
     max-width: 1140px;
@@ -151,7 +210,6 @@ section.ecx{
 }
 
 section.portfolio{
-    
     max-width: 1140px;
     width: 80%;
     margin: auto;
@@ -287,7 +345,6 @@ section.videos{
         }
     }
 }
-
 
 section.tributes{
     max-width: 1140px;

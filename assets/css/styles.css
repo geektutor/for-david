@@ -4,9 +4,72 @@
   box-sizing: border-box;
 }
 
-.biography {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+section.biography {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 100px auto;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  section.biography {
+    width: 90%;
+  }
+}
+section.biography .picture {
+  width: 48%;
+}
+@media screen and (max-width: 700px) {
+  section.biography .picture {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+section.biography .picture img {
+  width: 100%;
+}
+section.biography .description {
+  width: 45%;
+  margin: auto;
+}
+@media screen and (max-width: 700px) {
+  section.biography .description {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+section.biography .description .container {
+  margin-top: 32px;
+  width: 75%;
+  margin: auto;
+}
+@media screen and (max-width: 700px) {
+  section.biography .description .container {
+    width: 100%;
+  }
+}
+section.biography .description .container p.title {
+  font-weight: 600;
+  font-size: 48px;
+  font-family: "Zilla Slab", serif;
+  font-style: italic;
+  margin-bottom: 12px;
+  line-height: 57.6px;
+}
+section.biography .description .container p.date {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  line-height: 160%;
+}
+section.biography .description .container .bio {
+  font-family: "DM Sans", sans-serif;
+}
+section.biography .description .container .bio p {
+  margin-top: 32px;
+  line-height: 25.6px;
 }
 
 section.singleVideo {
