@@ -9,6 +9,9 @@
     <meta property="og:image" content="assets/images/logo.svg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Zilla+Slab&display=swap" rel="stylesheet">
@@ -120,7 +123,29 @@
 
     </section>
     <section class="gallery">
-
+        <p class="title">Gallery</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/images/david-on-the-microphone.jpg" alt="David singing" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/david-freestyling.jpg" alt="David freestyling" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/david-smiling.jpg" alt="David smiling wide" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/david-on-the-microphone.jpg" alt="David singing" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/david-freestyling.jpg" alt="David freestyling" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/david-smiling.jpg" alt="David smiling wide" />
+                </div>
+            </div>
+        </div>
     </section>
     <section class="biography">
         <div class="picture w-1/2">
@@ -199,5 +224,20 @@
                </div>
            </div>
     </section>
+
+    <!-- Swiper JS -->
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>

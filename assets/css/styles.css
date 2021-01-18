@@ -4,6 +4,38 @@
   box-sizing: border-box;
 }
 
+section.gallery {
+  max-width: 1140px;
+  width: 80%;
+  margin: 200px auto;
+}
+@media screen and (max-width: 500px) {
+  section.gallery {
+    width: 90%;
+  }
+}
+section.gallery p.title {
+  font-family: "Zilla Slab", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 24px;
+}
+section.gallery .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+section.gallery .swiper-container img {
+  min-width: 368px;
+}
+section.gallery .swiper-container img.swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section.biography {
   max-width: 1140px;
   display: flex;
