@@ -26,14 +26,16 @@ section.gallery .swiper-container {
   width: 100%;
   height: 100%;
 }
-section.gallery .swiper-container img {
-  min-width: 368px;
-}
-section.gallery .swiper-container img.swiper-slide {
+section.gallery .swiper-container.swiper-slide {
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1140px) {
+  section.gallery .swiper-container.swiper-slide {
+    width: 368px !important;
+  }
 }
 
 section.biography {

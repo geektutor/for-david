@@ -278,8 +278,22 @@
     
     <!-- Initialize Swiper -->
     <script>
+        const {width, height} = window.screen;
+        console.log(width);
+        let slidesPerView = 3;
+        if(width > 1024 && width < 1140) {
+            slidesPerView = 2.5
+        }   else if (width > 768 && width <= 1024) {
+            slidesPerView = 2.125
+        }   else if (width > 540 && width <= 768) {
+            slidesPerView = 1.5
+        }   else if (width > 414 && width <= 540) {
+            slidesPerView = 1.125
+        }   else if (width <= 414) {
+            slidesPerView = 1;
+        }
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
+            slidesPerView: slidesPerView,
             spaceBetween: 30,
             pagination: {
                 el: '.swiper-pagination',
