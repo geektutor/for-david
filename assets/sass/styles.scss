@@ -155,7 +155,7 @@ section.ibm{
         color: black;
         margin-bottom: 30px;
         @include mq(500px){
-           font-size: 30px; 
+           font-size: 25px; 
         }
     }
     .cover{
@@ -212,7 +212,7 @@ section.ecx{
         color: black;
         margin-bottom: 30px;
         @include mq(500px){
-           font-size: 30px; 
+           font-size: 25px; 
         }
     }
     .cover{
@@ -269,7 +269,7 @@ section.portfolio{
         color: black;
         margin-bottom: 30px;
         @include mq(500px){
-           font-size: 30px; 
+           font-size: 25px; 
         }
     }
     .flexDiv{
@@ -393,70 +393,122 @@ section.tributes{
     max-width: 1140px;
     width: 80%;
     margin: auto;
-   
+    margin-top: 70px;
     margin-bottom: 100px;
     @include mq(500px){
-        width: 90%;  
-    }
-    p.title{
-        font-weight: 600;
-        font-size: 40px;
-        font-family: $zilla;
-        font-style: italic;
-        color: black;
-        margin-bottom: 30px;
-        @include mq(500px){
-           font-size: 30px; 
+        width: 90%;
+        margin-top: 0;  
+    }   
+    .cover{
+        width: 60%;
+        margin: auto;
+        @include mq(760px){
+            height: auto;
+            width: 100%;
         }
-    }
-    .flexDiv{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        .eachTribute{
-            width: 30%;
-            height: 270px;
-            border: 1px solid #EEEEEE;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            @include mq(1045px){
-                height: auto;
-                width: 100%;
-            }
-            .message{
-                width: 100%;
-                height: 85%;
-                padding: 15px 10px;
-                border-bottom: 1px solid #EEEEEE;
-                @include mq(1045px){
-                    height: auto;
-         
+        
+        .addTribute{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            p.title{
+                font-weight: 600;
+                font-size: 40px;
+                font-family: $zilla;
+                font-style: italic;
+                color: black;
+                margin-bottom: 30px;
+                @include mq(500px){
+                   font-size: 25px; 
                 }
-                p{
-                    line-height: 25.6px;
-                    font-family: $dmsans;
-                    font-size: 14px;
-                    @include mq(500px){
-                        font-size: 12px;
+            }
+            .add{
+                display: flex;
+                align-items: center;
+            }
+            a{
+                color: black;
+                font-size: 14px;
+                font-family: $dmsans;
+                transform: translateY(-6px);
+                @include mq(500px){
+                    font-size: 12px; 
+                 }
+            }
+        }
+        .flexDiv{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: column;
+            .eachTribute{
+                width: 100%;
+                margin: auto;
+                height: auto;
+                border: 1px solid #EEEEEE;
+                border-radius: 10px;
+                margin-bottom: 30px;
+              
+                .message{
+                    width: 100%;
+                    padding: 15px 10px;               
+                    height: auto;
+             
+                    
+                    p{
+                        line-height: 25.6px;
+                        font-family: $dmsans;
+                        font-size: 14px;
+                        @include mq(500px){
+                            font-size: 12px;
+                        }
                     }
                 }
-            }
-            .name{
-               padding: 10px 10px;
-               height: 15%;
-               @include mq(1045px){
-                height: auto;
-           
-            }
-               p{
-                font-family: $dmsans;
-                font-size: 12px;
-                @include mq(500px){
-                    font-size: 10px;
+                .line{
+                    width: 94%;
+                    margin: auto;
+                    height: 2px;
+                    background: #EEEEEE;
+
                 }
-               }
+                .name{
+                   padding: 10px 10px;
+                   height: auto;
+                   display: flex;
+                   align-items: center;
+                   img{
+                       height: 50px;
+                       width: 50px;
+                       border-radius: 50%;
+                       margin-right: 15px;
+                       @include mq(500px){
+                        width: 30px;
+                        height: 30px;
+                    }
+                   }
+                   .namedate{
+                       .date{
+                           margin-top: 5px;
+                       }
+                       .namer{
+                           font-weight: 600;
+                           font-size: 13px;
+                       }
+                   }
+
+               
+                
+                   p{
+                    font-family: $dmsans;
+                    font-size: 12px;
+                    @include mq(500px){
+                        font-size: 10px;
+                    }
+                   }
+                }
             }
         }
     }
+    
 }

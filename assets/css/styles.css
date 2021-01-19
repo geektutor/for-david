@@ -148,7 +148,7 @@ section.ibm p.title {
 }
 @media screen and (max-width: 500px) {
   section.ibm p.title {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 section.ibm .cover {
@@ -211,7 +211,7 @@ section.ecx p.title {
 }
 @media screen and (max-width: 500px) {
   section.ecx p.title {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 section.ecx .cover {
@@ -274,7 +274,7 @@ section.portfolio p.title {
 }
 @media screen and (max-width: 500px) {
   section.portfolio p.title {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 section.portfolio .flexDiv {
@@ -414,14 +414,31 @@ section.tributes {
   max-width: 1140px;
   width: 80%;
   margin: auto;
+  margin-top: 70px;
   margin-bottom: 100px;
 }
 @media screen and (max-width: 500px) {
   section.tributes {
     width: 90%;
+    margin-top: 0;
   }
 }
-section.tributes p.title {
+section.tributes .cover {
+  width: 60%;
+  margin: auto;
+}
+@media screen and (max-width: 760px) {
+  section.tributes .cover {
+    height: auto;
+    width: 100%;
+  }
+}
+section.tributes .cover .addTribute {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section.tributes .cover .addTribute p.title {
   font-weight: 600;
   font-size: 40px;
   font-family: "Zilla Slab", serif;
@@ -430,65 +447,92 @@ section.tributes p.title {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 500px) {
-  section.tributes p.title {
-    font-size: 30px;
+  section.tributes .cover .addTribute p.title {
+    font-size: 25px;
   }
 }
-section.tributes .flexDiv {
+section.tributes .cover .addTribute .add {
+  display: flex;
+  align-items: center;
+}
+section.tributes .cover .addTribute a {
+  color: black;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  transform: translateY(-6px);
+}
+@media screen and (max-width: 500px) {
+  section.tributes .cover .addTribute a {
+    font-size: 12px;
+  }
+}
+section.tributes .cover .flexDiv {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  flex-direction: column;
 }
-section.tributes .flexDiv .eachTribute {
-  width: 30%;
-  height: 270px;
+section.tributes .cover .flexDiv .eachTribute {
+  width: 100%;
+  margin: auto;
+  height: auto;
   border: 1px solid #EEEEEE;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 1045px) {
-  section.tributes .flexDiv .eachTribute {
-    height: auto;
-    width: 100%;
-  }
-}
-section.tributes .flexDiv .eachTribute .message {
+section.tributes .cover .flexDiv .eachTribute .message {
   width: 100%;
-  height: 85%;
   padding: 15px 10px;
-  border-bottom: 1px solid #EEEEEE;
+  height: auto;
 }
-@media screen and (max-width: 1045px) {
-  section.tributes .flexDiv .eachTribute .message {
-    height: auto;
-  }
-}
-section.tributes .flexDiv .eachTribute .message p {
+section.tributes .cover .flexDiv .eachTribute .message p {
   line-height: 25.6px;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
 }
 @media screen and (max-width: 500px) {
-  section.tributes .flexDiv .eachTribute .message p {
+  section.tributes .cover .flexDiv .eachTribute .message p {
     font-size: 12px;
   }
 }
-section.tributes .flexDiv .eachTribute .name {
-  padding: 10px 10px;
-  height: 15%;
+section.tributes .cover .flexDiv .eachTribute .line {
+  width: 94%;
+  margin: auto;
+  height: 2px;
+  background: #EEEEEE;
 }
-@media screen and (max-width: 1045px) {
-  section.tributes .flexDiv .eachTribute .name {
-    height: auto;
+section.tributes .cover .flexDiv .eachTribute .name {
+  padding: 10px 10px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+section.tributes .cover .flexDiv .eachTribute .name img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+@media screen and (max-width: 500px) {
+  section.tributes .cover .flexDiv .eachTribute .name img {
+    width: 30px;
+    height: 30px;
   }
 }
-section.tributes .flexDiv .eachTribute .name p {
+section.tributes .cover .flexDiv .eachTribute .name .namedate .date {
+  margin-top: 5px;
+}
+section.tributes .cover .flexDiv .eachTribute .name .namedate .namer {
+  font-weight: 600;
+  font-size: 13px;
+}
+section.tributes .cover .flexDiv .eachTribute .name p {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
 }
 @media screen and (max-width: 500px) {
-  section.tributes .flexDiv .eachTribute .name p {
+  section.tributes .cover .flexDiv .eachTribute .name p {
     font-size: 10px;
   }
 }
