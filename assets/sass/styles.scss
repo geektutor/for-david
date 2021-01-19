@@ -1,8 +1,6 @@
 @import "mixin";
 @import "variables";
-html{
- overflow-x: hidden;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -217,7 +215,7 @@ section.gallery {
     }
     .mobileGallery{
         display: none;
-       
+       overflow-x: hidden;
         @include mq(700px){
             display: block;
             width: 100%;
@@ -237,6 +235,7 @@ section.gallery {
 section.biography {
     max-width: 1140px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 80%;
     margin: 100px auto;
@@ -275,21 +274,34 @@ section.biography {
             }
              p.title {
                 font-weight: 600;
-                font-size: 48px;
+                font-size: 40px;
                 font-family: $zilla;
                 font-style: italic;
-                margin-bottom: 12px;
-                line-height: 57.6px;
+                color: black;
+                margin-bottom: 30px;
+                @include mq(500px){
+                font-size: 25px; 
+                }
             }
             p.date {
-                font-weight: 500;
-                font-size: 20px;
-                font-family: $inter;
-                font-style: italic;
-                line-height: 160%;
+                font-size: 14px;
+                 
+                font-family: $dmsans;
+                    
+                    @include mq(500px){
+                        font-size: 12px; 
+                     }
+
             }
             .bio {
-                font-family: $dmsans;
+                font-size: 16px;
+                    line-height: 25.6px;
+                    font-family: $dmsans;
+                    
+                    @include mq(500px){
+                        font-size: 14px; 
+                     }
+
                 p {
                     margin-top: 32px;
                     line-height: 25.6px;
@@ -358,7 +370,7 @@ section.ibm{
                 }
                 p{
                     font-size: 14px;
-                    line-height: 160%;
+                    line-height: 25.6px;
                     font-family: $dmsans;
                     
                     @include mq(500px){
@@ -415,7 +427,7 @@ section.ecx{
                 }
                 p{
                     font-size: 14px;
-                    line-height: 160%;
+                    line-height: 25.6px;
                     font-family: $dmsans;
                     
                     @include mq(500px){

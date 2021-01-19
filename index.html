@@ -186,7 +186,7 @@
             </div>
         </div>
         <div class="mobilePortfolio">
-            <div class="swiper-container2 ">
+            <div class="swiper-container2 swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href=""> <img src="assets/images/image 1.png" alt="portfolio"></a>
@@ -210,6 +210,11 @@
         </div>
 
     </section>
+
+    <!-- <section class="mob">
+        <p class="title">Portfolio</p>
+        
+    </section> -->
    
     <section class="videos">
         <video src="" controls></video>
@@ -241,7 +246,7 @@
             </div>
         </div>
         <div class="mobileGallery">
-            <div class="swiper-container3">
+            <div class="swiper-container3 swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="./assets/images/david-on-the-microphone.jpg" alt="David singing" />
@@ -368,7 +373,7 @@
         let slidesPerView = 3;
 
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: slidesPerView,
+            slidesPerView: 3,
             spaceBetween: 10,
             loop:true,
             pagination: {
@@ -396,6 +401,7 @@
                 clickable: true,
             },
         });
+     
     </script>
 </body>
 </html>
