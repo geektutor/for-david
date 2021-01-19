@@ -1,13 +1,185 @@
+html {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+header {
+  max-width: 1140px;
+  width: 80%;
+  margin-left: 18%;
+  height: 90vh;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1045px) {
+  header {
+    display: none;
+  }
+}
+header .headerFlex {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+header .headerFlex .picture {
+  width: 70%;
+  background-image: url("../images/rex.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+header .headerFlex .nameDiv {
+  padding-top: 200px;
+}
+header .headerFlex .nameDiv p {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Zilla Slab", serif;
+  font-style: italic;
+  color: black;
+  z-index: 2;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 500px) {
+  header .headerFlex .nameDiv p {
+    font-size: 25px;
+  }
+}
+header .headerFlex .nameDiv p.sec {
+  position: absolute;
+}
+header .headerFlex .nameDiv button {
+  background: transparent;
+  background: #FFEFCB;
+  border: none;
+  color: black;
+  padding: 3px;
+  margin-top: 70px;
+}
+header .headerFlex .second {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+header .headerFlex .card {
+  width: 300px;
+  z-index: 1;
+  height: 200px;
+  transform: translate(-250px, 30px);
+  background: #FFEFCB;
+  padding: 20px;
+}
+header .headerFlex .card i.fa-quote-left {
+  margin-bottom: 20px;
+}
+header .headerFlex .card i.fa-quote-right {
+  margin-top: 20px;
+  float: right;
+}
+
+.mobileHeader {
+  display: none;
+}
+@media screen and (max-width: 1045px) {
+  .mobileHeader {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 90vh;
+  }
+  .mobileHeader .headerFlex {
+    height: 100%;
+    background-image: url("../images/rex.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobileHeader .headerFlex .nameDiv {
+    padding-top: 40px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1045px) and (max-width: 650px) {
+  .mobileHeader .headerFlex .nameDiv {
+    padding-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .mobileHeader .headerFlex .nameDiv p {
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    font-family: "Zilla Slab", serif;
+    font-style: italic;
+    z-index: 2;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1045px) and (max-width: 500px) {
+  .mobileHeader .headerFlex .nameDiv p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .mobileHeader .headerFlex .nameDiv button {
+    background: transparent;
+    background: #FFEFCB;
+    border: none;
+    color: black;
+    padding: 3px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .mobileHeader .headerFlex .second {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .mobileHeader .headerFlex .card {
+    width: 300px;
+    z-index: 1;
+    height: 200px;
+    transform: translate(30px, 30px);
+    background: #FFEFCB;
+    padding: 20px;
+  }
+  .mobileHeader .headerFlex .card i.fa-quote-left {
+    margin-bottom: 20px;
+  }
+  .mobileHeader .headerFlex .card i.fa-quote-right {
+    margin-top: 20px;
+    float: right;
+  }
+}
+@media screen and (max-width: 1045px) and (max-width: 650px) {
+  .mobileHeader .headerFlex .card {
+    width: 100%;
+    transform: translate(10px, 30px);
+  }
+}
+
 section.gallery {
   max-width: 1140px;
   width: 80%;
-  margin: 200px auto;
+  margin: 100px auto;
 }
 @media screen and (max-width: 500px) {
   section.gallery {
@@ -15,12 +187,17 @@ section.gallery {
   }
 }
 section.gallery p.title {
+  font-weight: 600;
+  font-size: 40px;
   font-family: "Zilla Slab", serif;
   font-style: italic;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 58px;
-  margin-bottom: 24px;
+  color: black;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  section.gallery p.title {
+    font-size: 25px;
+  }
 }
 section.gallery .swiper-container {
   width: 100%;
@@ -34,6 +211,29 @@ section.gallery .swiper-container img.swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 700px) {
+  section.gallery .desk {
+    display: none;
+  }
+}
+section.gallery .mobiegallery {
+  display: none;
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  section.gallery .mobiegallery {
+    display: block;
+  }
+}
+section.gallery .mobiegallery .swiper-container3 {
+  width: 100%;
+}
+section.gallery .mobiegallery .swiper-container3 .swiper-slide {
+  width: 100%;
+}
+section.gallery .mobiegallery .swiper-container3 img {
+  width: 100%;
 }
 
 section.biography {
@@ -280,6 +480,11 @@ section.portfolio p.title {
 section.portfolio .flexDiv {
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  section.portfolio .flexDiv {
+    display: none;
+  }
+}
 section.portfolio .flexDiv .flex {
   margin-bottom: 40px;
 }
@@ -383,6 +588,24 @@ section.portfolio .flexDiv .flex.three .second img {
   section.portfolio .flexDiv .flex.three {
     flex-direction: column;
   }
+}
+section.portfolio .mobilePortfolio {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  section.portfolio .mobilePortfolio {
+    display: block;
+    width: 100%;
+  }
+}
+section.portfolio .mobilePortfolio .swiper-container2 {
+  width: 100%;
+}
+section.portfolio .mobilePortfolio .swiper-container2 .swiper-wrapper .swiper-slide a {
+  width: 100%;
+}
+section.portfolio .mobilePortfolio .swiper-container2 .swiper-wrapper .swiper-slide a img {
+  width: 100%;
 }
 
 section.videos {

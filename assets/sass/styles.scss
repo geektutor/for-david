@@ -1,6 +1,8 @@
 @import "mixin";
 @import "variables";
-
+html{
+ overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,22 +12,180 @@
     // font-family: 'Zilla Slab', serif;
 }
 
+header{
+    max-width: 1140px;
+    width: 80%;
+    margin-left: 18%;
+    height: 90vh;
+    margin-bottom: 100px;
+
+    @include mq(1045px){
+       display: none;
+    }
+    .headerFlex{
+        width: 100%;
+        display: flex;
+        height: 100%;
+        position: relative;
+        justify-content: space-between;
+        .picture{
+            width: 70%;
+            background-image: url('../images/rex.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+
+        }
+        .nameDiv{
+            padding-top: 200px;
+            
+            
+            p{
+                font-weight: 600;
+                font-size: 40px;
+                font-family: $zilla;
+                font-style: italic;
+                color: black;
+                z-index: 2;
+                margin-bottom: 20px;
+                margin-right: 10px;
+                @include mq(500px){
+                font-size: 25px; 
+                } 
+            }
+            p.sec{
+                position: absolute;
+            }
+            button{
+                background: transparent;
+                background: #FFEFCB;
+                border: none;
+                color: black;
+                padding: 3px;
+                margin-top: 70px;
+            }
+        }
+        .second{
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+        }      
+        .card{
+            width: 300px;
+            z-index: 1;
+            height: 200px;
+            transform: translate(-250px,30px);
+            background: #FFEFCB;
+            padding: 20px;
+            i.fa-quote-left{
+                margin-bottom: 20px;
+            }
+            i.fa-quote-right{
+                margin-top: 20px;
+                float:right;
+            }
+        }
+
+
+    }
+}
+.mobileHeader{
+    display: none;
+    @include mq(1045px){
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+        height: 90vh;
+        .headerFlex{
+            height: 100%;
+            background-image: url('../images/rex.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: space-between;
+            .nameDiv{
+                padding-top: 40px;
+                margin-left: 10px;
+                @include mq(650px){
+                    padding-top: 0px;
+                    margin-left: 0px;
+                    position: absolute;
+                    top: 50px;
+                    left: 30px;
+                    } 
+                p{
+                    font-weight: 600;
+                    font-size: 40px;
+                    color: white;
+                    font-family: $zilla;
+                    font-style: italic;
+                    z-index: 2;
+                    margin-bottom: 10px;
+                    @include mq(500px){
+                    font-size: 25px; 
+                    } 
+                }
+                button{
+                    background: transparent;
+                    background: #FFEFCB;
+                    border: none;
+                    color: black;
+                    padding: 3px;
+                    margin-top: 20px;
+                }
+            }
+            .second{
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+            }      
+            .card{
+                width: 300px;
+                z-index: 1;
+                height: 200px;
+                transform: translate(30px,30px);
+                background: #FFEFCB;
+                padding: 20px;
+                i.fa-quote-left{
+                    margin-bottom: 20px;
+                }
+                i.fa-quote-right{
+                    margin-top: 20px;
+                    float:right;
+                }
+                @include mq(650px){
+                    width: 100%;
+                    transform: translate(10px,30px);
+                }
+            }
+        }
+       
+
+    }
+}
+
 section.gallery {
     max-width: 1140px;
     width: 80%;
-    margin: 200px auto;
+    margin: 100px auto;
 
     @include mq(500px){
         width: 90%;  
     }
 
     p.title {
+        font-weight: 600;
+        font-size: 40px;
         font-family: $zilla;
         font-style: italic;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 58px;
-        margin-bottom: 24px;
+        color: black;
+        margin-bottom: 30px;
+        @include mq(500px){
+           font-size: 25px; 
+        }
     }
 
     .swiper-container {
@@ -50,6 +210,27 @@ section.gallery {
             }
         }
         
+    }
+    .desk{
+        @include mq(700px){
+            display: none;
+        }
+    }
+    .mobiegallery{
+        display: none;
+        width: 100%;
+        @include mq(700px){
+            display: block;
+        }
+        .swiper-container3{
+            width: 100%;
+            .swiper-slide{
+                width: 100%;
+            }
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -274,6 +455,9 @@ section.portfolio{
     }
     .flexDiv{
         width: 100%;
+        @include mq(600px){
+            display: none;
+        }
         .flex{
             margin-bottom: 40px;
             @include mq(768px){
@@ -285,11 +469,7 @@ section.portfolio{
             &:hover{
                 transform: scale(1.1);
             }
-        }
-    
-        
-            
-        
+        }     
         .flex.one{
             width: 100%;
             display: flex;
@@ -363,6 +543,30 @@ section.portfolio{
             @include mq(768px){
                 flex-direction: column;
             }
+        }
+    }
+    .mobilePortfolio{
+        display: none;
+        @include mq(600px){
+            display: block;
+            width: 100%;
+        }
+        .swiper-container2{
+            width: 100%;
+            .swiper-wrapper{
+                .swiper-slide{
+                    a{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+
+                    }
+                    
+                }
+                
+            }
+            
         }
     }
    

@@ -20,8 +20,46 @@
 </head>
 <body>
     <header>
+        <div class="headerFlex">
+            <div class="nameDiv">
+              <p>David</p>
+              <p class="sec"> Ntekim Rex</p>
+              <button>1998-2021</button>
+            </div>
+            <div class="picture">
 
+            </div>
+            <div class="second">
+                <div class="card">
+                    <div class="cover">
+                        <i class="fas fa-quote-left"></i>
+                        <p> Art is that place where you can be anything, to express yourself, to be whoever you want, to describe what words cannot describe" - David Ntekim-Rex </p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
     </header>
+    <div class="mobileHeader">
+        <div class="headerFlex">
+            <div class="nameDiv">
+              <p>David</p>
+              <p class="sec"> Ntekim Rex</p>
+              <button>1998-2021</button>
+            </div>
+            <div class="second">
+                <div class="card">
+                    <div class="cover">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Art is that place where you can be anything, to express yourself, to be whoever you want, to describe what words cannot describe" - David Ntekim-Rex</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+    </div>
 
     <section class="singleVideo">
          <video src="" controls></video>
@@ -148,8 +186,32 @@
                
             </div>
         </div>
+        <div class="mobilePortfolio">
+            <div class="swiper-container2 ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""> <img src="assets/images/image 1.png" alt="portfolio"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""> <img src="assets/images/image 1.png" alt="portfolio"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""> <img src="assets/images/image 1.png" alt="portfolio"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""> <img src="assets/images/image 1.png" alt="portfolio"></a>
+                    </div>
+                    
+                   
+    
+                </div>
+               
+            </div>
+
+        </div>
 
     </section>
+   
     <section class="videos">
         <video src="" controls></video>
         <video src=""controls></video>
@@ -157,7 +219,7 @@
     </section>
     <section class="gallery">
         <p class="title">Gallery</p>
-        <div class="swiper-container">
+        <div class="swiper-container desk">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="./assets/images/david-on-the-microphone.jpg" alt="David singing" />
@@ -176,6 +238,30 @@
                 </div>
                 <div class="swiper-slide">
                     <img src="./assets/images/david-smiling.jpg" alt="David smiling wide" />
+                </div>
+            </div>
+        </div>
+        <div class="mobilegallery">
+            <div class="swiper-container3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/david-on-the-microphone.jpg" alt="David singing" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/david-freestyling.jpg" alt="David freestyling" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/david-smiling.jpg" alt="David smiling wide" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/david-on-the-microphone.jpg" alt="David singing" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/david-freestyling.jpg" alt="David freestyling" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/david-smiling.jpg" alt="David smiling wide" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,6 +367,27 @@
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
             spaceBetween: 30,
+            loop:true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        var swiper2 = new Swiper('.swiper-container2', {
+            slidesPerView: 1,
+        
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        var swiper3 = new Swiper('.swiper-container3', {
+            slidesPerView: 1,
+        
+            spaceBetween: 50,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
