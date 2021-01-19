@@ -91,7 +91,7 @@ header .headerFlex .card i.fa-quote-right {
 @media screen and (max-width: 1045px) {
   .mobileHeader {
     display: block;
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-bottom: 50px;
     height: 90vh;
@@ -219,22 +219,22 @@ section.gallery .swiper-container.swiper-slide {
     display: none;
   }
 }
-section.gallery .mobiegallery {
+section.gallery .mobileGallery {
   display: none;
-  width: 100%;
 }
 @media screen and (max-width: 700px) {
-  section.gallery .mobiegallery {
+  section.gallery .mobileGallery {
     display: block;
+    width: 100%;
   }
 }
-section.gallery .mobiegallery .swiper-container3 {
+section.gallery .mobileGallery .swiper-container3 {
   width: 100%;
 }
-section.gallery .mobiegallery .swiper-container3 .swiper-slide {
+section.gallery .mobileGallery .swiper-container3 .swiper-slide {
   width: 100%;
 }
-section.gallery .mobiegallery .swiper-container3 img {
+section.gallery .mobileGallery .swiper-container3 img {
   width: 100%;
 }
 

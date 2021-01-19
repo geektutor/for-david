@@ -12,7 +12,6 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Zilla+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -241,7 +240,7 @@
                 </div>
             </div>
         </div>
-        <div class="mobilegallery">
+        <div class="mobileGallery">
             <div class="swiper-container3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -367,20 +366,10 @@
         const {width, height} = window.screen;
         console.log(width);
         let slidesPerView = 3;
-        if(width > 1024 && width < 1140) {
-            slidesPerView = 2.5
-        }   else if (width > 768 && width <= 1024) {
-            slidesPerView = 2.125
-        }   else if (width > 540 && width <= 768) {
-            slidesPerView = 1.5
-        }   else if (width > 414 && width <= 540) {
-            slidesPerView = 1.125
-        }   else if (width <= 414) {
-            slidesPerView = 1;
-        }
+
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: slidesPerView,
-            spaceBetween: 30,
+            spaceBetween: 10,
             loop:true,
             pagination: {
                 el: '.swiper-pagination',
@@ -400,7 +389,7 @@
         var swiper3 = new Swiper('.swiper-container3', {
             slidesPerView: 1,
         
-            spaceBetween: 50,
+            spaceBetween: 10,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',

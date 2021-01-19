@@ -94,7 +94,7 @@ header{
     display: none;
     @include mq(1045px){
         display: block;
-        width: 90%;
+        width: 100%;
         margin: auto;
         margin-bottom: 50px;
         height: 90vh;
@@ -215,11 +215,12 @@ section.gallery {
             display: none;
         }
     }
-    .mobiegallery{
+    .mobileGallery{
         display: none;
-        width: 100%;
+       
         @include mq(700px){
             display: block;
+            width: 100%;
         }
         .swiper-container3{
             width: 100%;
