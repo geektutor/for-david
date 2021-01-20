@@ -70,26 +70,34 @@ const loaderprofile = ()=>{
       .catch(error => console.log('error', error));
   
     const loader=(data) =>{
- 
-       let tbody=document.querySelector('tbody')
-        
-        for (let i = 0; i < data.length; i++) {
-
-           let tr = `
-           <tr class="studrow row1">
-                                <td class="studname">${i+1}</td>
-                                <td class="studcontact">${data[i].name}</td>
-                                <td class="action"><button onclick="popModal('${data[i].id}')">View Details</button></td>
-                           
-           </tr>
-           `
-   
-           tbody.innerHTML += tr
-        
+        if (data.length==0) {
+            alert('No tribute to approve')
         }
-   
+        else{
+
+            let tbody=document.querySelector('tbody')
         
-      }
+            for (let i = 0; i < data.length; i++) {
+    
+               let tr = `
+               <tr class="studrow row1">
+                                    <td class="studname">${i+1}</td>
+                                    <td class="studcontact">${data[i].name}</td>
+                                    <td class="action"><button onclick="popModal('${data[i].id}')">View Details</button></td>
+                               
+               </tr>
+               `
+       
+               tbody.innerHTML += tr
+            
+            }
+       
+            
+          }
+
+        }
+ 
+      
       
   
 }
