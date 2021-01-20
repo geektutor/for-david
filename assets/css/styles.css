@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -331,13 +335,13 @@ section.singleVideo {
     width: 90%;
   }
 }
-section.singleVideo video {
+section.singleVideo iframe {
   width: 60%;
   display: block;
   margin: auto;
 }
 @media screen and (max-width: 700px) {
-  section.singleVideo video {
+  section.singleVideo iframe {
     width: 85%;
   }
 }
@@ -638,11 +642,11 @@ section.videos {
     width: 90%;
   }
 }
-section.videos video {
+section.videos iframe {
   width: 48%;
 }
 @media screen and (max-width: 700px) {
-  section.videos video {
+  section.videos iframe {
     width: 100%;
     margin-bottom: 30px;
   }

@@ -1,5 +1,8 @@
 @import "mixin";
 @import "variables";
+html{
+    overflow-x: hidden;
+}
 
 *{
     margin: 0;
@@ -322,7 +325,7 @@ section.singleVideo{
     @include mq(500px){
         width: 90%;  
     }
-    video{
+    iframe{
         width: 60%;
         display: block;
         margin: auto;
@@ -597,7 +600,7 @@ section.videos{
     @include mq(500px){
         width: 90%;  
     }
-    video{
+    iframe{
         width: 48%;
         @include mq(700px){
             width: 100%;
