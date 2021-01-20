@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Kuizu">
+    <meta property="og:description" content="Enjoy the game">
+    <meta property="og:image" content="image/attack3.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/logo.svg" type="image/x-icon" />
+
+    <title>Anime</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/list.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/select.css">
+    
+</head>
+<body>
+    
+    <nav>
+
+        <div class="nav">
+
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav_container">
+                <img src="image/logo.png" alt="">
+                <div class="butoons">
+                    <a onclick="clearToken()">Log out</a>
+                </div>
+            
+    
+            </div>
+
+        </div>
+        
+        
+       
+    </nav>
+
+    <main>
+        <div class="nav_content">
+            
+
+            <div class="navigation">
+                <p class="navi"></p>
+
+
+                <div class="project srd active">
+                    <a href="index.html" class="project">
+                        
+                        <p style="text-align: center;" class="txt">Tribute List</p>
+                    </a>
+                </div>
+
+
+            </div>
+
+          
+
+        </div>
+        
+        <section class="second">
+
+            <div class="containerover">
+                <div class="pagename">
+                    <p>Question List</p>
+                    <form class="formsearcho" action="">
+                        
+                        <select class="searf" type="text" name="searcherr" placeholder="Search">
+                            <option value="">Select Category</option>
+                        </select>
+                        <input type="submit" hidden>
+                    </form>
+                </div>
+                <div class="overflowtable flipped"  >
+
+                    <table>
+                        <thead>
+
+                            <tr class="studhead">
+                                <th>S/N</th>
+                                <th>Name</th>
+                                <th>Actions</th>
+                            </tr>
+
+                        </thead>
+                        
+                        <tbody>
+                            
+                        </tbody>
+    
+                      
+    
+                        
+                    </table>
+
+                    
+
+                </div>
+
+             
+
+            </div>
+              
+        </section>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span onclick="closeModal()" class="close">&times;</span>
+                <!-- <form action="">
+                    <div class="group">
+                        <div class="inputDiv">
+                            <label for="firstName">First Name</label>
+                            <input type="text" required placeholder="John" name="firstName" id="firstName">
+                        </div>
+                        <div class="inputDiv">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" required placeholder="doe" name="lastName" id="lastName">
+                        </div>
+                    </div>
+    
+    
+                   
+    
+                    <div class="groupTextArea">
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" placeholder="Write your message"></textarea>
+                    </div>
+    
+                    <button type="submit">Send</button>
+    
+    
+                </form> -->
+                <div class="display">
+                    <p class="message">
+                        
+                    </p>
+
+                    <button class="approve">Approve</button>
+                </div>
+                
+
+            </div>
+        </div>
+
+
+        
+    </main>
+
+
+
+    <script src="../assets/scripts/nav.js"></script>  
+    <script src="../assets/scripts/token.js"></script> 
+    <script src="../assets/scripts/tributes.js"></script>
+    <script src="../assets/scripts/cleartoken.js"></script>
+    
+</body>
+</html>
