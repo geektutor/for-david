@@ -28,7 +28,9 @@ form.addEventListener('submit',(e)=>{
         .then(response => response.json())
         .then(result => {
              console.log(result)
-             button.textContent = 'Added Successfully'
+             button.textContent = 'Submitted Successfully'
+             let suc= document.querySelector('.suc')
+             suc.textContent = 'The tribute will appear once it is approved'
             myFunction()
           
         })

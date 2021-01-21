@@ -378,7 +378,6 @@ section.ibm .cover .flex {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 @media screen and (max-width: 768px) {
   section.ibm .cover .flex {
@@ -441,7 +440,6 @@ section.ecx .cover .flex {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 @media screen and (max-width: 768px) {
   section.ecx .cover .flex {

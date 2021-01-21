@@ -362,7 +362,7 @@ section.ibm{
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            
             @include mq(768px){
                 flex-direction: column;
             }
@@ -419,7 +419,7 @@ section.ecx{
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+          
             @include mq(768px){
                 flex-direction: column;
             }
